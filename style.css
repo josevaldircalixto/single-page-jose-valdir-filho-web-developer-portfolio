@@ -70,3 +70,151 @@ header {
   margin-top: 20px;
   margin-bottom: 49px;
 }
+
+#container-title-into {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 40px;
+  width: 343px;
+  height: 244px;
+  align-items: center;
+}
+
+#container-title-into h1 {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1.136px;
+}
+
+#container-title-into p {
+  color: var(--grey, #D9D9D9);
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Space Grotesk';
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.button-contact-me {
+  background-color: transparent;
+  color: var(--white, #FFF);
+  font-size: 16px;
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2.286px;
+
+  text-transform: uppercase;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #4EE1A0;
+  width: 131px;
+
+}
+
+hr {
+  width: 343px;
+}
+
+#skills-box {
+  height: 602px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+
+}
+
+.container-skills h2 {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+
+.container-skills p {
+  color: var(--grey, #D9D9D9);
+  text-align: center;
+  font-size: 16px;
+  font-family: Space Grotesk;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+#container-images-projects {
+  height: 2828px;
+}
+
+#container-project-title-contact-me {
+  width: 343px;
+  display: flex;
+  gap: 71px;
+  align-items: center;
+  margin: 80px auto 40px auto;
+  justify-content: center;
+}
+
+#container-project-title-contact-me h1 {
+  color: var(--white, #FFF);
+  font-size: 40px;
+  font-family: Space Grotesk;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1.136px;
+}
+
+.projects-images {
+  width: 345px;
+}
+
+.container-project {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.title-project {
+  color: var(--white, #FFF);
+
+  /* Heading (M) */
+  font-size: 24px;
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+
+
+.technologies-under-the-project-images {
+  color: var(--grey, #D9D9D9);
+
+  /* Body */
+  font-size: 18px;
+  font-family: 'Space Grotesk';
+  font-weight: 500;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.links-under-the-project-images {
+  color: var(--white, #FFF);
+  font-size: 16px;
+  font-family: Space Grotesk;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2.286px;
+}
