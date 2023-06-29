@@ -165,26 +165,38 @@
 
 
   <div id="container-contact">
+    <div id="container-contact-fieldset">
+      <div id="container-contact-text">
+        <h1 id="container-contact-h1">Contact</h1>
 
-    <div id="container-contact-text">
-      <h1 id="container-contact-h1">Contact</h1>
+        <p id="container-contact-p">I would love to hear about your project and how I could help. Please
+          fill in the form, and I’ll get back to you as soon as possible.</p>
+      </div>
 
-      <p id="container-contact-p">I would love to hear about your project and how I could help. Please
-        fill in the form, and I’ll get back to you as soon as possible.</p>
+      <form action="/send-message" method="post">
+
+        <div class="container-name-and-email">
+          <label for="nome">Name:</label>
+          <input class="input-text-email" type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="container-name-and-email">
+          <label for="email">E-mail:</label>
+          <input class="input-text-email" type="email" id="email" name="email" required>
+        </div>
+
+        <div id="container-message">
+          <label for="mensagem">Message:</label>
+          <textarea id="input-message" name="mensagem" required></textarea>
+        </div>
+        <button id="send-message-button" type="submit">Send Message</button>
+        <div id="end-page-patter-ring">
+          <img class="pattern-rings" src="/assets/images/pattern-rings.svg" alt="pattern-rings">
+        </div>
+      </form>
     </div>
+    <hr id="end-page">
 
-    <form action="/send-message" method="post">
-      <label for="nome">Name:</label>
-      <input class="input-text-email" type="text" id="nome" name="nome" required>
-
-      <label for="email">E-mail:</label>
-      <input class="input-text-email" type="email" id="email" name="email" required>
-
-      <label for="mensagem">Message:</label>
-      <textarea id="input-mensagem" name="mensagem" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
     <div class="container-name-icons">
       <div>
         <h3 class="title-name">josevaldirfilho</h3>
