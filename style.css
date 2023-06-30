@@ -237,7 +237,6 @@ hr {
 }
 
 .view-code {
-  width: 100px;
   gap: 32px;
   border-bottom: 2px solid #4EE1A0;
   padding-bottom: 10px;
@@ -369,4 +368,28 @@ form label {
 
 }
 
-@media (min-width:768px) {}
+@media (min-width:768px) {
+
+  header {
+    height: 660px;
+  }
+
+  .container-name-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+
+  }
+
+  .title-name {
+    margin-left: 30px;
+  }
+
+  .icon-style {
+    margin-right: 30px;
+
+  }
+
+
+}
