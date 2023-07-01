@@ -391,5 +391,40 @@ form label {
 
   }
 
+  #h1-and-hero {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 486px;
+    width: 100%;
+  }
+
+  #img-jose-photo-tablet {
+    width: 349.854px;
+    height: 486px;
+  }
+
+  #container-title-into {
+    align-items: flex-start;
+    z-index: 1;
+  }
+
+
+  #container-title-into h1,
+  p,
+  button {
+    text-align: left !important;
+
+  }
+
+  #container-title-into h1 {
+    color: var(--white, #FFF);
+    font-size: 72px;
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -2.045px;
+    width: 443px;
+  }
 
 }
