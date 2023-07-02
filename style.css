@@ -55,6 +55,16 @@ header {
   width: 19.2px;
 }
 
+#h1-and-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 486px;
+  width: 100%;
+}
+
+
+
 #img-jose-photo-tablet {
   width: 174.21px;
   z-index: 1;
@@ -370,6 +380,10 @@ form label {
 
 @media (min-width:768px) {
 
+  body {
+    width: fit-content;
+  }
+
   header {
     height: 660px;
   }
@@ -377,23 +391,27 @@ form label {
   .container-name-icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100vw;
 
+  }
+
+  .container-social-icons {
+    width: 192px;
+    justify-content: space-around;
   }
 
   .title-name {
     margin-left: 30px;
   }
 
-  .icon-style {
-    margin-right: 30px;
-
-  }
+  .icon-style {}
 
   #h1-and-hero {
+    position: relative;
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
     height: 486px;
     width: 100%;
   }
@@ -404,8 +422,13 @@ form label {
   }
 
   #container-title-into {
-    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+    height: 486px;
     z-index: 1;
+    align-content: flex-start;
+    margin-left: 32px !important;
   }
 
 
@@ -425,6 +448,14 @@ form label {
     line-height: 72px;
     letter-spacing: -2.045px;
     width: 443px;
+  }
+
+  #container-title-into p {
+    font-size: 18px;
+  }
+
+  .button-contact-me {
+    align-content: start !important;
   }
 
 }
