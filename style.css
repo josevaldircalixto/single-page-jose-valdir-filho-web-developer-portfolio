@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  background-color: rgb(63, 60, 60);
+  background-color: rgb(0, 0, 0);
+  width: 100vw !important;
 }
 
 header {
@@ -31,12 +32,19 @@ header {
   left: -342px;
 }
 
-#pattern-circle {
+#container-pattern-circle {
+  overflow: hidden;
   position: absolute;
-  width: 129px;
-  top: 254px;
-  right: -65px;
+  top: 471px;
+  right: 0px;
+  overflow: hidden;
+  z-index: 2;
 }
+
+#pattern-circle {
+  width: 129px;
+}
+
 
 
 .title-name {
@@ -49,6 +57,11 @@ header {
   letter-spacing: -0.333px;
 
 }
+
+#line-green-under-name {
+  text-decoration-color: #4EE1A0;
+}
+
 
 .icon-style {
   height: 19.2px;
@@ -129,7 +142,9 @@ header {
 }
 
 hr {
-  width: 343px;
+  display: flex;
+  margin-left: 34px;
+  margin-right: 34px;
 }
 
 #skills-box {
@@ -405,20 +420,24 @@ form label {
     margin-left: 30px;
   }
 
-  .icon-style {}
-
   #h1-and-hero {
     position: relative;
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
     height: 486px;
     width: 100%;
+
+    margin-right: -14px;
+    justify-content: flex-end;
+    overflow: hidden;
   }
 
   #img-jose-photo-tablet {
     width: 349.854px;
     height: 486px;
+    position: absolute;
+    right: 0px;
+
   }
 
   #container-title-into {
@@ -427,7 +446,7 @@ form label {
     width: 445px;
     height: 486px;
     z-index: 1;
-    align-content: flex-start;
+    align-items: flex-start;
     margin-left: 32px !important;
   }
 
