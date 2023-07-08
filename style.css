@@ -4,13 +4,10 @@ html {
 
 body {
   background-color: rgb(0, 0, 0);
-  position: relative;
-
-
 }
 
 header {
-  position: relative;
+
   height: 748px;
   display: flex;
   flex-direction: column;
@@ -32,21 +29,19 @@ header {
 }
 
 .pattern-rings {
-  position: absolute;
-  width: 530px;
-  top: 124px;
-  left: -342px;
-}
-
-#container-pattern-circle {
   position: relative;
-  top: 230px;
-  right: -195px;
-
+  width: 530px;
+  top: -658px;
+  left: -240px;
+  z-index: 3;
 }
 
 #pattern-circle {
-  width: 129px;
+  position: relative;
+  top: -420px;
+  right: -190px;
+  z-index: 2;
+
 }
 
 
@@ -76,15 +71,18 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 486px;
   width: 100%;
+
+
 }
 
 
 
 #img-jose-photo-tablet {
-  width: 174.21px;
-  z-index: 1;
+  width: 174px;
+  z-index: 4;
+  overflow: hidden;
+  position: relative;
 }
 
 .container-name-icons {
@@ -434,7 +432,6 @@ form label {
   }
 
   #h1-and-hero {
-    position: relative;
     display: flex;
     flex-direction: row-reverse;
     height: 486px;
@@ -442,7 +439,6 @@ form label {
 
     margin-right: -14px;
     justify-content: flex-end;
-    overflow: hidden;
   }
 
   #img-jose-photo-tablet {
