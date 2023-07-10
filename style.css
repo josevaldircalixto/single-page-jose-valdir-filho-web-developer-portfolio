@@ -36,12 +36,21 @@ header {
   z-index: 3;
 }
 
-#pattern-circle {
-  position: relative;
-  top: -420px;
-  right: -190px;
-  z-index: 2;
+#image-and-circles {
+  display: flex;
+  flex-direction: column;
+  height: 242px;
+}
 
+
+#pattern-circle {
+  height: 129px;
+  width: 129px;
+  position: relative;
+  top: -131px;
+  right: -211px;
+  z-index: 2;
+  display: block;
 }
 
 
@@ -67,6 +76,11 @@ header {
   width: 19.2px;
 }
 
+.icon-style:hover {
+  fill: #4EE1A0;
+  cursor: pointer;
+}
+
 #h1-and-hero {
   display: flex;
   flex-direction: column;
@@ -81,8 +95,9 @@ header {
 #img-jose-photo-tablet {
   width: 174px;
   z-index: 4;
-  overflow: hidden;
+
   position: relative;
+  height: 100% !important;
 }
 
 .container-name-icons {
@@ -140,7 +155,12 @@ header {
   border-bottom: 2px solid #4EE1A0;
   padding-bottom: 10px;
   width: auto;
+  text-decoration: none;
+}
 
+.button-contact-me:hover {
+  color: var(--green, #4EE1A0);
+  cursor: pointer;
 }
 
 hr {
@@ -257,6 +277,11 @@ hr {
 
 }
 
+.links-under-the-project-images a:hover {
+  color: var(--green, #4EE1A0);
+  cursor: pointer;
+}
+
 .links-under-the-project-images {
   margin-top: 20px;
   display: flex;
@@ -268,6 +293,11 @@ hr {
   gap: 32px;
   border-bottom: 2px solid #4EE1A0;
   padding-bottom: 10px;
+}
+
+.view-code:hover {
+  color: var(--green, #4EE1A0);
+  cursor: pointer;
 }
 
 #container-contact {
@@ -378,6 +408,12 @@ form label {
   margin-left: 180px;
 }
 
+#send-message-button:hover {
+  color: var(--green, #4EE1A0);
+  cursor: pointer;
+}
+
+
 #container-contact-text {
   display: flex;
   flex-direction: column;
@@ -414,17 +450,31 @@ form label {
     height: 660px;
   }
 
+  .pattern-rings {
+    top: -658px;
+    left: -374px;
+  }
+
+  #pattern-circle {
+    top: -129px;
+    right: -216px;
+    z-index: 4;
+    position: relative;
+  }
+
+
   .container-name-icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     width: 100vw;
-
+    justify-content: space-between;
+    margin-left: 30px;
   }
 
   .container-social-icons {
     width: 192px;
     justify-content: space-around;
+    margin-right: 30px;
   }
 
   .title-name {
@@ -438,13 +488,19 @@ form label {
     width: 100%;
 
     margin-right: -14px;
-    justify-content: flex-end;
+    justify-content: center;
   }
+
+  #image-and-circles {
+    height: 486px;
+    width: 350px;
+  }
+
 
   #img-jose-photo-tablet {
     width: 349.854px;
     height: 486px;
-    position: absolute;
+
     right: 0px;
 
   }
@@ -457,6 +513,7 @@ form label {
     z-index: 1;
     align-items: flex-start;
     margin-left: 32px !important;
+    gap: 60px;
   }
 
 
@@ -480,6 +537,7 @@ form label {
 
   #container-title-into p {
     font-size: 18px;
+    width: 418px;
   }
 
   .button-contact-me {
@@ -497,7 +555,7 @@ form label {
     gap: 52px;
     height: auto;
     margin-bottom: 100px;
-    justify-content: start;
+    justify-content: center;
 
   }
 
@@ -610,6 +668,185 @@ form label {
     margin-bottom: 0;
   }
 
+
+
+
 }
 
-@media (min-width:1440px) {}
+@media (min-width:1440px) {
+
+  header {
+    height: 824px;
+  }
+
+  .title-name {
+    font-size: 32px;
+    margin-left: 100px;
+
+  }
+
+  .container-social-icons {
+    height: 25px;
+    width: 192px;
+    margin-right: 165px;
+  }
+
+  .icon-style {
+    height: auto;
+    width: 25px;
+  }
+
+  .container-name-icons {
+    margin-left: 162px;
+  }
+
+  #h1-and-hero {
+    height: 700px !important;
+    align-items: flex-start;
+  }
+
+  #image-and-circles {
+    width: 444.876px;
+    height: 618px;
+  }
+
+
+  #img-jose-photo-tablet {
+    width: 444px;
+    height: 618px;
+  }
+
+
+  #container-title-into {
+    width: 706px;
+    margin-top: 0px;
+    margin-left: 165px !important;
+    justify-content: flex-start;
+    gap: unset;
+  }
+
+  #container-title-into h1 {
+    width: 786px;
+    font-size: 88px;
+    margin-top: 39px;
+    margin-bottom: 37px;
+    line-height: 95px;
+  }
+
+  #container-title-into p {
+    margin-bottom: 66px;
+    width: 445px;
+  }
+
+  #img-jose-photo-tablet {
+    margin-right: 165px !important;
+  }
+
+  #pattern-circle {
+    top: -258px;
+    right: 90px;
+    height: 187px !important;
+    width: 187px;
+  }
+
+  .pattern-rings {
+    top: -604px;
+    left: -576px;
+    overflow: hidden;
+  }
+
+  hr {
+    width: 1110px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #skills-box {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 170px;
+    padding-right: auto;
+    margin-bottom: auto;
+  }
+
+  #container-images-projects {
+    width: 1110px;
+    margin: 0 auto 100px auto;
+    padding-bottom: 100px;
+  }
+
+  #container-project-title-contact-me {
+    width: 100% !important;
+    justify-content: space-between;
+    gap: unset;
+  }
+
+
+  #container-project-area {
+    margin: 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 69px 24px;
+    height: auto;
+    align-content: flex-start;
+  }
+
+  .container-project {
+    width: 540px !important;
+    margin-bottom: 50px;
+    height: 487px;
+  }
+
+  .projects-images {
+    width: 100%;
+  }
+
+
+  #container-contact {
+    width: auto;
+    height: auto;
+  }
+
+  #container-contact-fieldset {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #container-contact-h1 {
+    text-align: left;
+    font-size: 88px;
+    margin-bottom: 36px;
+    margin-top: 84px;
+  }
+
+  #container-contact-p {
+    font-size: 18px;
+    width: 445px;
+    text-align: left !important;
+  }
+
+
+
+  #container-contact-text {
+    width: 445px;
+    margin-top: 0;
+  }
+
+  form {
+    margin-top: 84px;
+    width: 445px;
+    height: 327px;
+  }
+
+  #container-contact-fieldset {
+    gap: 220px;
+  }
+
+  #footer-name {
+    margin-left: -19px;
+  }
+
+  .container-social-icons {
+    margin-right: 248px;
+  }
+
+}
