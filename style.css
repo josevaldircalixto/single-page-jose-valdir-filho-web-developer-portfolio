@@ -439,6 +439,12 @@ form label {
 
 }
 
+#container-project-area img {
+  width: 345px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
 #container-project-area {
   display: flex;
   flex-direction: column;
