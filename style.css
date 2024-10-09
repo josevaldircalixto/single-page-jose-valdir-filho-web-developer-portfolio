@@ -230,10 +230,10 @@ hr {
   letter-spacing: -1.136px;
 }
 
-.projects-images {
+/* .projects-images {
   width: 345px;
 }
-
+ */
 .container-project {
   display: flex;
   flex-direction: column;
@@ -786,28 +786,42 @@ form label {
   }
 
   #container-project-title-contact-me {
-    width: 100% !important;
-    justify-content: space-between;
-    gap: unset;
+    display: flex;
+    gap: min(313px);
+    flex-direction: row;
+    margin-top: 0;
+    width: auto !important;
+    margin-bottom: 60px;
   }
 
+  #container-project-title-contact-me h1 {
+    font-size: 72px;
+    height: 72px;
+  }
+
+  #container-project-title-contact-me a {
+    font-size: 16px;
+    width: 119px;
+    text-decoration: none;
+  }
 
   #container-project-area {
-    margin: 0;
-    justify-content: flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 69px 24px;
-    height: auto;
-    align-content: flex-start;
+    gap: 22px;
+    justify-content: center;
   }
 
   .container-project {
-    width: 540px !important;
-    margin-bottom: 50px;
-    height: 487px;
+    height: 398px;
+    width: 342px;
+    margin-left: 0;
   }
 
   .projects-images {
+    max-width: 100%;
     width: 100%;
   }
 
